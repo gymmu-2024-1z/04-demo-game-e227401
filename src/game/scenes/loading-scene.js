@@ -22,6 +22,12 @@ export default class LoadingScene extends Phaser.Scene {
    * die Ressourcen dann im Game-Loop verwendet werden können.
    */
   preload() {
+    //Lade das Spritesheet für den Spieler.
+    this.load.spritesheet("player", "./assets/player.png", {
+      frameWidth: 32,
+      frameHeight: 32,
+    })
+
     // Lade das Tileset für die Karten und die Objekte.
     this.load.image("tileset", "./assets/tileset.png")
 
@@ -31,6 +37,11 @@ export default class LoadingScene extends Phaser.Scene {
       "pickups",
       "./assets/tileset.png",
       "./assets/atlas/atlas-pickups.json",
+    )
+    this.load.atlas(
+      "doors",
+      "./assets/tileset.png",
+      ".assets/atlas/atlas-doors.json",
     )
 
     // Wir möchten auf das Drücken der Leertaste reagieren können, daher müssen
@@ -49,6 +60,7 @@ export default class LoadingScene extends Phaser.Scene {
    * die Lade-Szene brauchen wir aber nur einen Text.
    */
   create() {
+    this.createAnimations()
     // Damit erstellen wir ein Spielobjekt Text. Wir geben die Position in x und y
     // an, und geben den Text der angezeigt werden soll an.
     const text = this.add.text(320, 240, "Press SPACE to start the Game.")
