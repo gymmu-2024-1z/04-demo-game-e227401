@@ -80,6 +80,17 @@
                  "width":0,
                  "x":416,
                  "y":224
+                }, 
+                {
+                 "height":0,
+                 "id":10,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":242,
+                 "y":62
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -232,7 +243,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -266,66 +277,20 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":10,
+ "nextobjectid":11,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.11.0",
+ "tiledversion":"1.11.2",
  "tileheight":32,
  "tilesets":[
         {
-         "columns":4,
          "firstgid":1,
-         "image":"..\/tileset.png",
-         "imageheight":68,
-         "imagewidth":136,
-         "margin":1,
-         "name":"tileset",
-         "spacing":2,
-         "tilecount":8,
-         "tileheight":32,
-         "tiles":[
-                {
-                 "id":1,
-                 "properties":[
-                        {
-                         "name":"collides",
-                         "type":"bool",
-                         "value":true
-                        }]
-                }, 
-                {
-                 "id":4,
-                 "properties":[
-                        {
-                         "name":"collides",
-                         "type":"bool",
-                         "value":true
-                        }]
-                }, 
-                {
-                 "id":5,
-                 "properties":[
-                        {
-                         "name":"collides",
-                         "type":"bool",
-                         "value":true
-                        }]
-                }, 
-                {
-                 "id":7,
-                 "properties":[
-                        {
-                         "name":"collides",
-                         "type":"bool",
-                         "value":true
-                        }]
-                }],
-         "tilewidth":32
+         "source":"..\/..\/..\/tiled\/tileset.tsx"
         }],
  "tilewidth":32,
  "type":"map",
