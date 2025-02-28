@@ -41,7 +41,7 @@ export default class LoadingScene extends Phaser.Scene {
     this.load.atlas(
       "doors",
       "./assets/tileset.png",
-      ".assets/atlas/atlas-doors.json",
+      "./assets/atlas/atlas-doors.json",
     )
 
     // Wir möchten auf das Drücken der Leertaste reagieren können, daher müssen
@@ -82,10 +82,10 @@ export default class LoadingScene extends Phaser.Scene {
       // Die Leertaste wurde gedrückt, jetzt möchten wir eine neue Szene laden.
       // Das was wir hier übergeben, ist der Schlüssel/Name der Szene, so wie
       // es im Konstruktor angegeben wurde.
-      this.scene.start("level-01")
+      this.scene.start("level-00")
     }
   }
-  createAnimation() {
+  createAnimations() {
     // Das erstellt uns eine Animation. Hier können wir mehrere Parameter übergeben
     // um die Animation zu definieren.
     this.anims.create({

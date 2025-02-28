@@ -82,4 +82,3 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
   }
 }
-import Phaser from "phaser"
